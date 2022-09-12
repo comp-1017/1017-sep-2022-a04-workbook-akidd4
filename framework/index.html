@@ -51,12 +51,12 @@
             <li>open extension using 5 icon on left by menu</li>
             <li>either search for live server or select is seen in list</li>
             <li>press install</li>
-            <ol>to use</ol>
+            <li>to use</li>
                 <li>open an html page</li>
                 <li>make any adjustments</li>
                 <li>look to bottom right on blue status line for go live and press</li>
-                <li>make additinal adjustments, save and return to browser to see update</li>
-        </ol>
+                <li>make additional adjustments, save and return to browser to see update</li>
+            </ol>
         <ul>
             <li>this is an unordered list</li>
             <li>default display is a buleted list</li>
@@ -81,5 +81,55 @@
                 _blank will open a new browser tab (page)
         -->
         <a href="https://www.nait.ca" target="_blank">go to Nait</a>
+
+        <h3>image tag</h3>
+        <!-- an empty (void) tag
+        image tag does not have a closeing tag
+        the imag tag has no content, however it does have peramteres
+
+        peramaters
+        src="relative web site location"
+        alt="printable text if the image is not found at src"
+        [title="tool tip text for he mage"]
+
+
+        Absolute Addressing is a complete fixed file path
+        drive:/folder/.../folder/filename.ext
+
+        relative address begins at a specific point
+        for the web sites, it is the "top of the wb site"
+        reference to the desired filename is done by specifying
+        the appropriate folder path to the desired file
+        NO DRIVE
+
+        movement with a relative address
+        - if only the file name is given, the location is within the
+        same folder
+        - movement down the file structure is by /foldername
+        - movement up the file structure is by suing .. for each
+        folder level to ascend
+
+
+        same folder
+        ="filename.ext"
+
+        lower folder
+        ="nextleveldownfoldername/nextleveldownfoldername/../filename.ext"
+
+        from one lower folder to another lower folder on a different branch
+        .. for each level that needs to be ascended
+        ="../../../nextleveldownfoldername/filename.ext"
+    -->
+       <image src="img/photoshop.png" alt="logo photoshop"
+           title="a logo image of photoshop"></image>
+
+        <!--
+            combine the anchor tag and the image tag as the anchor tag content
+
+        -->
+        <a href="http://www.adobe.com"target="_blank">
+            <image src="img/photoshop.png" alt="logo photoshop"
+            title="a logo image of photoshop" style="width:80px; height:80px;">
+        </a>
      </body>
 </html>
