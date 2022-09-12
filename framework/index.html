@@ -27,10 +27,59 @@
     -->
       
     <h1>Bacis html tags</h1>
+    <h3>paragraph tag</h3>
     <p>this page demonstrates the basic structure of an html web page. The head area has the
         browse title tab specified as will as the charset defined. The body is demonstrating
         the h1 header tag and the paragraph tag. 
     </p>
     <p>this is another paragraph</p>
+    <!--
+        if you wish to use a component of a reserved tag (or the whole tag)
+        you would be in trouble using the tag.
+        instead: you can use special character strings to represent
+        components of the tag such as the < (&lt;) and the > (&gt;)
+    -->
+    <h3>list tags: &lt;ol&gt; and &lt; ul&gt;</h3>
+    <!--
+        block tag , paired 
+        create an ordered list (numbered) using <ol>
+        create an ordered list (bulleted) using <ul>
+        items on the list are indicated in the line <li>
+        -->
+        <ol>
+            <li>add extension live server for go love execution from VSC</li>
+            <li>open extension using 5 icon on left by menu</li>
+            <li>either search for live server or select is seen in list</li>
+            <li>press install</li>
+            <ol>to use</ol>
+                <li>open an html page</li>
+                <li>make any adjustments</li>
+                <li>look to bottom right on blue status line for go live and press</li>
+                <li>make additinal adjustments, save and return to browser to see update</li>
+        </ol>
+        <ul>
+            <li>this is an unordered list</li>
+            <li>default display is a buleted list</li>
+            <li>we will see later how to remove these bullets using css styling</li>
+        </ul>
+
+        <h3>anchor tag (a.k.a linking to another page)</h3>
+        <!--
+            this is an anchor tag and is incorrectly referred to as the
+            link tag
+            one should not use the link tag because there is actually a <link>
+            used in the <head> section
+                the anchor tag can take you to a different location whether it
+                be on a different website, different page in the current web site
+                or  different location on the current page
+
+
+                parameters:
+                href: points to the desired location
+                target: indicates the browser page display option
+                default is same dsiplay tab
+                _blank will open a new browser tab (page)
+        -->
+        <a href="https://www.nait.ca" target="_blank">go to Nait</a>
      </body>
 </html>
